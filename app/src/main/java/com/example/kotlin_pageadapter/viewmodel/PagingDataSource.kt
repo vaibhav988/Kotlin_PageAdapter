@@ -26,12 +26,5 @@ class PagingDataSource : PagingSource<Int , Articles>() {
      } catch (exception: HttpException) {
          return LoadResult.Error(exception)
      }
-
-
-
-
-
-
-
  }
 }
