@@ -10,7 +10,7 @@ import com.example.kotlin_pageadapter.NewsPageAdapter
 import com.example.kotlin_pageadapter.viewmodel.NewsViewModel
 import com.example.kotlin_pageadapter.databinding.ActivityMainBinding
 
-import kotlinx.coroutines.launch
+
 
 class MainActivity : AppCompatActivity() {
 
