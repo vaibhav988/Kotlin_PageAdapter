@@ -2,14 +2,10 @@ package com.example.kotlin_pageadapter.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
 import androidx.recyclerview.widget.LinearLayoutManager
-
 import com.example.kotlin_pageadapter.NewsPageAdapter
-
 import com.example.kotlin_pageadapter.viewmodel.NewsViewModel
 import com.example.kotlin_pageadapter.databinding.ActivityMainBinding
-
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initviews()
@@ -32,11 +27,7 @@ class MainActivity : AppCompatActivity() {
             newsPageAdapter.submitData(lifecycle , it)
         }
 
-
-
-
     }
-
     fun initviews()
     {
         newsPageAdapter = NewsPageAdapter(applicationContext)
